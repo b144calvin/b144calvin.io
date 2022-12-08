@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> ALL PRODUCT ELEGANT AND BOLD  
+    </title>
+    <link rel="stylesheet" href="style.css">
+    <link href="http://font.googleapis.com/css2?
+    family=poppins:wght@300;400;500;600;700&display=swap"
+    rel="stylesheet">  
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/fontawesome.min.css">
+</head>
+<body>
+
+<div class="header">
+     <div class="container">
+        <div class="navbar">
+            <nav>
+                <ul id="menuitems">
+                    <li><a href="INDEX.HTML">Home</a></li>
+                    <li><a href="product.html">Products</a></li>
+                    <li><a href="account.html">Account</a></li>
+                </ul>
+            </nav>
+           
+            <img src="images/menu icon.png" class="menu-icon" 
+            onclick="menutoggle()">
+        </div>
+     </div>
+    </div>
+    <!---account page-->
+<div class="account-name">
+    <div class="comtainer">
+        <div class="row">
+            <div class="col-2">
+                <img src="images/Screenshot_20221002-160846.png" width="100%">
+            </div>
+
+            <div class="col-2">
+                <div class="form-container">
+                    <div class="form-btn">
+                        <span onclick="login()">Login</span>
+                        <span onclick="register()">Register</span>
+                        <hr id="indicator">
+                    </div>
+
+                    <form id="loginForm">
+                        <input type="text" placeholder="username">
+                        <input type="text" placeholder="Password">
+                        <button type="submit" class="btn">Login</button>
+                        <a href="">forgot password</a>
+                    </form> 
+
+                    <form id="RegForm" >
+                        <input type="text" placeholder="username">
+                        <input type="email" placeholder="register">
+                        <input type="text"  placeholder="Password">
+                        <button type="submit" class="btn">Register</button>
+                        
+                    </form>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+   
+ 
+    
+
+
+
+
+<!---footer-->
+<div class="footer">
+    <div class="container">
+        <div class="row">
+            <div class="footer-col-1">
+                <h3> DOwnload our App</h3>
+                <p>download app for anroid and ios mobile phone.</p>
+            </div>
+            <div class="footer-col-2">
+                <p>our purpose is to make you feel bold amd elegant
+                     whenever amd wherever.</p>
+            </div>
+            <div class="footer-col-3">
+                <h3> usefull links</h3>
+               <ul>
+                <li>blog post</li>
+                <li>return policy</li>
+               </ul> 
+            </div>
+            <div class="footer-col-4">
+                <h3>follow us</h3>
+               <ul>
+                <li>instgram</li>
+                <li>tiktok</li>
+                <li>twitter</li>
+               </ul> 
+            </div>
+        </div>
+        <hr>
+         <p class="copyright">copyright 2020 - bold and elegant</p>
+    </div>
+</div>
+<!--for toggle menu--->
+<script>
+    var menuitems = document.getElementById("menuitems");
+
+    menuitems.style.maxHeight = "0px";
+
+    function menutoggle(){
+        if( menuitems.style.maxHeight == "0px")
+        {
+            menuitems.style.maxHeight = "200px";
+        }
+        else
+        {
+            menuitems.style.maxHeight = "0px";
+        }
+    }
+</script>
+
+<!--js for toggle form-->
+
+<script>
+
+var loginForm = document.getElementById("loginForm");
+var RegForm = document.getElementById("RegForm");
+var indicator = document.getElementById("indicator");
+       
+function register(){
+
+        RegForm.style.transform ="translateX(0px)";
+        LoginForm.style.transform ="translateX(0px)";
+        indicator.style.transform ="translateX(100px)";
+ }
+function login(){
+
+        RegForm.style.transform ="translateX(300px)";
+        LoginForm.style.transform ="translateX(300px)";
+        indicator.style.transform ="translateX( 0px)";
+}
+
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>  

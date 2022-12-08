@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> ALL PRODUCT ELEGANT AND BOLD  
+    </title>
+    <link rel="stylesheet" href="style.css">
+    <link href="http://font.googleapis.com/css2?
+    family=poppins:wght@300;400;500;600;700&display=swap"
+    rel="stylesheet">  
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/fontawesome.min.css">
+</head>
+<body>
+
+<div class="header">
+     <div class="container">
+        <div class="navbar">
+            <nav>
+                <ul id="menuitems">
+                    <li><a href="INDEX.HTML">Home</a></li>
+                    <li><a href="product.html">Products</a></li>
+                    <li><a href="account.html">Account</a></li>
+                </ul>
+            </nav>
+            <a href="shopping cart.html"><img src="images/shopping-cart-orange-background-icon-vector-illustration-stock-80754940.jpg" width="30px" height="30px"></a>
+            <img src="images/menu icon.png" class="menu-icon" 
+            onclick="menutoggle()">
+        </div>
+     </div>
+    </div>
+    <!--single product details-->   
+    <div class="small-container">
+        <div class="row">
+            <div class="col-2">
+                
+            </div>
+        </div>
+    </div>
+ 
+    <!--single product details---->
+    <div class="small-container single-product">
+        <div class="row">
+            <div class="col-2">
+                <img src="images/Screenshot_20221002-jacket.png" alt="">
+               
+            </div>
+            <div class="col-2">
+                <p>home/ unisex jacket</p>
+                <h1> unisex jacket</h1>
+                <h4>ksh1000</h4>
+                <select> 
+                    <option>select size</option>
+                    <option>Large</option>
+                    <option>XL</option>
+                </select>
+                <input type="number" value="1">
+                <a href="shopping cart.html" class="btn">Add to cart</a>
+                 
+            </div>
+        </div>
+    </div>
+
+    <div class="small-container">
+        <div class="row row-2">
+            <h2>related product</h2>
+            <a href="product.html"><p>view product</p></a>
+        </div>
+    </div>
+
+
+<div class="small-container">
+   
+        <div class="row">
+            <div class="col-4">
+                <a href="product detail.html"><img src="images/Screenshot_20221002-top2.png"  ></a>
+                <h4>baloon top</h4>
+                <div class="rating">
+                    <i class="fa fa-star" ></i>
+                    <i class="fa fa-star" ></i>
+                    <i class="fa fa-star" ></i>
+                    <i class="fa fa-star" ></i>
+                    <i class="fa fa-star-o" ></i>
+                </div>
+                <p>ksh900</p>
+            </div>
+            <div class="col-4">
+                <a href="long blazer for men.html"><img src="images/Screenshot_20221002-blazer 1.png" ></a>
+                <h4>long blazer for men</h4>
+                <div class="rating">
+                    <i class="fa fa-star" ></i>
+                    <i class="fa fa-star" ></i>
+                    <i class="fa fa-star" ></i>
+                    <i class="fa fa-star" ></i>
+                    <i class="fa fa-star-o" ></i>
+                </div>
+                <p>ksh900</p>
+            </div>
+            <div class="col-4">
+                <a href="fish top.html"><img src="images/Screenshot_20221002-top.png"  ></a>
+                <h4>fish top</h4>
+                <div class="rating">
+                    <i class="fa fa-star" ></i>
+                    <i class="fa fa-star" ></i>
+                    <i class="fa fa-star" ></i>
+                    <i class="fa fa-star" ></i>
+                    <i class="fa fa-star-o" ></i>
+                </div>
+                <p>ksh600</p>
+            </div>
+        </div>
+        
+</div>
+
+<!---footer-->
+<div class="footer">
+    <div class="container">
+        <div class="row">
+            <div class="footer-col-1">
+                <h3> DOwnload our App</h3>
+                <p>download app for anroid and ios mobile phone.</p>
+            </div>
+            <div class="footer-col-2">
+                <p>our purpose is to make you feel bold amd elegant
+                     whenever amd wherever.</p>
+            </div>
+            <div class="footer-col-3">
+                <h3> usefull links</h3>
+               <ul>
+                <li>blog post</li>
+                <li>return policy</li>
+               </ul> 
+            </div>
+            <div class="footer-col-4">
+                <h3>follow us</h3>
+               <ul>
+                <li>instgram</li>
+                <li>tiktok</li>
+                <li>twitter</li>
+               </ul> 
+            </div>
+        </div>
+        <hr>
+         <p class="copyright">copyright 2020 - bold and elegant</p>
+    </div>
+</div>
+<!--for toggle menu--->
+<script>
+    var menuitems = document.getElementById("menuitems");
+
+    menuitems.style.maxHeight = "0px";
+
+    function menutoggle(){
+        if( menuitems.style.maxHeight == "0px")
+        {
+            menuitems.style.maxHeight = "200px";
+        }
+        else
+        {
+            menuitems.style.maxHeight = "0px";
+        }
+    }
+</script>
+
+
+</body>
+</html> 
